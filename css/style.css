@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,900&display=swap');
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-warning {
+    color: #fff;
+}
+
+/* header */
+.destaque {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../imagens/background.png);
+}
+
+.destaque figure{
+   text-align: center;
+}
+
+.destaque section figure img {
+    max-width: 30vw;
+}
+
+figure img{
+    max-width: 50vw;
+}
+
+.destaque div {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Formulário */
+.marrom {
+    background-image: url(../imagens/background-marrom.png);
+    min-height: 70vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#login {
+    display: none;
+}
+
+#cadastro, 
+#login {
+    color: #fff;
+}
+
+#cadastro h2,
+#login h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#cadastro p {
+    font-size: 1.3rem;
+    width: 60%;
+    margin: auto;
+}
+
+.label-float input, select {
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    background-color: transparent;
+    outline: none;
+    min-width: 300px;
+    border-radius: 0;
+}
+
+.label-float {
+    position: relative;
+    padding-top: 25px;
+    margin-bottom: 0.5rem;
+}
+
+.label-float input:focus {
+    background-color: transparent;
+    border-bottom:  2px solid orange;
+}
+
+.label-float label {
+    color: #fff;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.label-float input:focus + label, 
+.label-float input:valid + label {
+    margin-top: 0;
+    color: #fff;
+}
+
+.fa-eye {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    cursor: pointer;
+    color: orange;
+}
+
+input ::placeholder {
+    color: #fff;
+}
+
+/* modal */
+.modal-content {
+    background-color: orange;
+}
+
+/* atenção */
+.cinza {
+    background-image: url(../imagens/background-cinza.png);
+}
+
+.cinza h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 40px;
+}
+
+.cinza p {
+    text-align: justify;
+}
+
+.cinza figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* footer */
+footer {
+    color: #fff;
+    background-color: orange;
+}
+
+span {
+    color: rgb(80, 23, 23);
+}
+
+.rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

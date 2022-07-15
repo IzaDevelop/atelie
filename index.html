@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <article class="destaque">
+            <section>
+                <figure>
+                    <img src="imagens/logo-camapanha-red-tagline.png"
+                        alt="Um brinde a europa, uma campanha para quem tem sede de prêmios">
+                </figure>
+                <div>
+                    <a href="#login" class="btn btn-warning btn-lg" id="form1">Login</a>
+                    <a href="#cadastro" class="btn btn-warning btn-lg" id="form2">Cadastre-se</a>
+                </div>
+            </section>
+            <figure>
+                <img src="imagens/clouds.png" alt="">
+            </figure>
+        </article>
+    </header>
+    <main>
+        <div class="marrom">
+            <div class="container">
+                <form class="row g-3 " id="login">
+                    <h2 class="text-center display-3">Login</h2>
+                    <div class="col-md-12 label-float">
+                        <label for="cpfLogin" class="form-label">CPF</label>
+                        <input type="text" class="form-control" id="cpfLogin" placeholder="000.000.000-00" maxlength="11"
+                            required>
+                    </div>
+                    <div class="col-md-12 label-float">
+                        <label for="senhaLogin" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="senhaLogin" placeholder="Digite sua senha" required>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center">
+                        <button type="submit" class="btn btn-warning btn-lg">Entrar</button>
+                    </div>
+                </form>
+                <form class="row g-3" id="cadastro">
+                    <h2 class="text-center display-3">Cadastre-se</h2>
+                    <p class="text-center">Preencha os campos abaixo para validar sua participação na campanha e
+                        concorrer aos prêmios.</p>
+                    <div class="col-md-12 label-float">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Nome" required>
+                    </div>
+                    <div class="col-md-6 label-float">
+                        <label for="cpf" class="form-label">CPF</label>
+                        <input type="text" class="form-control" id="cpf" placeholder="000.000.000-00" maxlength="11"
+                            required>
+                    </div>
+                    <div class="col-md-6 label-float">
+                        <label for="inputEmail4" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="E-mail" required>
+                    </div>
+                    <div class="col-md-6 label-float">
+                        <label for="senha" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" required>
+                        <i id="senha1" class="fa-solid fa-eye"></i>
+                    </div>
+                    <div class="col-md-6 label-float">
+                        <label for="confirmeSenha" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="confirmeSenha" placeholder="Confirme sua senha"
+                            required>
+                        <i id="senha2" class="fa-solid fa-eye"></i>
+                    </div>
+                    <div class="col-md-6 label-float">
+                        <label for="empresa" class="form-label">Empresa:</label>
+                        <input type="text" class="form-control" id="empresa" placeholder="Empresa" required>
+                    </div>
+                    <div class="col-md-6 label-float">
+                        <label for="categoria" class="form-label">Classificação</label>
+                        <select id="categoria" class="form-select">
+                            <option selected>Escolha sua categoria</option>
+                            <option>Gerente</option>
+                            <option>Revendedor</option>
+                            <option>Distribuidor</option>
+                        </select>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center">
+                        <button type="submit" class="btn btn-warning btn-lg" data-bs-toggle="modal"
+                            data-bs-target="#modal">Enviar</button>
+                    </div>
+                </form>
+                <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="emodalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h3 class="text-center">Cadastro realizado com sucesso!</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cinza">
+            <div class="container">
+                <article class="row g-3">
+                    <div class="col-md-8">
+                        <h3>Só quem vende curte as <br> experiências mais diferentonas!</h3>
+                        <p>*Campanha valida de 01/02 a 31/03/2020. Vendas via Business Center e para o Setor Público não
+                            serão
+                            válidas. A apuração do mês de agosto será retroativa. Imagens meramente ilustrativas.
+                            Realizamos
+                            todos os esforços para garantir a precisão das informações, mas não somos responssáveis por
+                            qualquer
+                            conteúdo editorial, fotográfico o por erros tipográficos, visite
+                            www.umbrindenaeuropa.com/saiba.
+                            Não
+                            fazmos nenhuma representação ou garantia em relação a produtos ou serviços de terceiros.
+                            Outos
+                            nomes
+                            de empresas, produtos e serviços podem ser marcas registradas ou marcas de serviços de
+                            terceiros.
+                            &copy; 2020. Todos os direitos reservaos.</p>
+                    </div>
+                    <figure class="col-md-4">
+                        <img src="imagens/logo-camapanha-red.png" class="img-fluid" alt="Um brinde na Europa">
+                    </figure>
+                </article>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container rodape">
+            <p>Dúvidas? Envie um e-mail para <span>atendimento@umbrindenaeuropa.com.br</span></p>
+            <p>Imagens meramente ilustrativas. Promoção válida de 01/02 a 31/03/2020.</p>
+        </div>
+    </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
