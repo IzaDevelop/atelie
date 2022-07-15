@@ -14,11 +14,8 @@ body {
     font-family: 'lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.btn-warning {
-    color: #fff;
-}
-
 /* header */
+
 .destaque {
     height: 100vh;
     display: flex;
@@ -32,11 +29,11 @@ body {
    text-align: center;
 }
 
-.destaque section figure img {
-    max-width: 30vw;
+.img1 {
+    max-width: 25vw;
 }
 
-figure img{
+.img2{
     max-width: 50vw;
 }
 
@@ -46,7 +43,12 @@ figure img{
     gap: 1rem;
 }
 
+.btn-warning {
+    color: #fff;
+}
+
 /* Formulário */
+
 .marrom {
     background-image: url(../imagens/background-marrom.png);
     min-height: 70vh;
@@ -126,11 +128,13 @@ input ::placeholder {
 }
 
 /* modal */
+
 .modal-content {
     background-color: orange;
 }
 
 /* atenção */
+
 .cinza {
     background-image: url(../imagens/background-cinza.png);
 }
@@ -153,6 +157,7 @@ input ::placeholder {
 }
 
 /* footer */
+
 footer {
     color: #fff;
     background-color: orange;
@@ -166,4 +171,32 @@ span {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+/* responsivo */
+
+@media screen and (max-width: 540px) {
+    html {
+        font-size: 14px;
+    }
+
+    .destaque .img1 {
+        min-width: 150px;
+    }
+
+    .destaque .img2 {
+        min-width: 300px;
+    }
+
+    #cadastro p {
+        width: 100%;
+    }
+
+    .cinza h3 {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        text-align: center;
+    }
 }
